@@ -9,7 +9,7 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto active" href="#Home">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about">About Us</a></li>
                 <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
@@ -22,8 +22,8 @@
                 <li><a class="nav-link scrollto" href="#team">Team</a></li>
                 <li><a class="nav-link scrollto " href="#portfolio">Gallery</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                <li><a class="nav-link scrollto " href="#portfolio">Log In</a></li>
-                <li><a class="nav-link scrollto" href="#pricing">Register</a></li>
+                <li><a class="nav-link scrollto active" id="btnlog" href="#portfolio">Log In</a></li>
+                <li><a class="nav-link scrollto active" id="btnreg" href="#pricing">Register</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

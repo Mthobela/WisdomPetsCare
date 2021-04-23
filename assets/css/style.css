@@ -11,6 +11,10 @@ a {
     color: #2671eb;
     text-decoration: none;
 }
+#btnlog, #btnreg{
+    background-color: orangered;
+    color:#fff;
+}
 
 a:hover {
     color: #2671eb;
