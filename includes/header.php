@@ -4,7 +4,7 @@
         <div class="logo">
             <h1><a href="index.html">Wisdom Pets</a></h1>
             <!-- For image logo-->
-            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <!-- <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>-->
         </div>
 
         <nav id="navbar" class="navbar">
@@ -26,10 +26,10 @@
                 <li><a class="nav-link scrollto" href="#pricing">Register</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+        </nav>
 
     </div>
-</header><!-- End Header -->
+</header>
 
 
 

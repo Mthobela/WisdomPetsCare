@@ -68,8 +68,10 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Navigation Menu Start
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation
+
+
+/*
+* Desktop Navigation Start
 */
 .navbar {
     padding: 0;
@@ -172,9 +174,13 @@ h1, h2, h3, h4, h5, h6 {
         left: -100%;
     }
 }
+/*
+* Desktop Navigation End
+*/
+
 
 /**
-* Mobile Navigation
+* Mobile Navigation start
 */
 .mobile-nav-toggle {
     color: black; /* change it to white */
@@ -272,3 +278,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
     display: block;
 }
+/**
+* Mobile Navigation End
+*/
