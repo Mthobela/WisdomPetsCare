@@ -13,9 +13,9 @@
                 <li><a class="nav-link scrollto" href="#about">About Us</a></li>
                 <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Selling Pets</a></li>
-                        <li><a href="#">Pets Accommodation</a></li>
-                        <li><a href="#">Pets Medical Cares</a></li>
+                        <li><a href="#selling">Selling Pets</a></li>
+                        <li><a href="#accommodation">Pets Accommodation</a></li>
+                        <li><a href="#medical">Pets Medical Cares</a></li>
 
                     </ul>
                 </li>
