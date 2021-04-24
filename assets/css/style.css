@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px 15px 7px 15px;
     margin-left: 5px;
     font-size: 14px;
-    color: black;  /* change it to white when adding slide show */
+    color: #fff;
     white-space: nowrap;
     transition: 0.3s;
     border-radius: 50px;
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation start
 */
 .mobile-nav-toggle {
-    color: black; /* change it to white */
+    color: #fff;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -231,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 15px;
     padding: 10px 0;
     border-radius: 10px;
-    background-color: black; /* change it to white */
+    background-color: #fff;
     overflow-y: auto;
     transition: 0.3s;
 }
@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-    color: black; /* change it to white */
+    color: white;
 }
 
 .navbar-mobile .getstarted {
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 99;
     opacity: 1;
     visibility: visible;
-    background: black; /* change it to white */
+    background: #fff;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -276,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-    color: black; /* change it to white */
+    color: white;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -285,3 +285,160 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Mobile Navigation End
 */
+
+
+/*--------------------------------------------------------------
+# slideshow Section Start
+--------------------------------------------------------------*/
+#slideshow {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+    filter: brightness(40%);
+    padding: 0;
+
+}
+
+#slideshow .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 70vh;
+    padding-top: 60px;
+}
+
+#slideshow h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#slideshow p {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+}
+
+#slideshow .carousel-control-prev, #slideshow .carousel-control-next {
+    width: 10%;
+}
+
+#slideshow .carousel-control-next-icon, #slideshow .carousel-control-prev-icon {
+    background: none;
+    font-size: 48px;
+    line-height: 1;
+    width: auto;
+    height: auto;
+}
+
+@media (min-width: 1024px) {
+    #slideshow p {
+        width: 60%;
+    }
+    #slideshow .carousel-control-prev, #slideshow .carousel-control-next {
+        width: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    #slideshow .carousel-container {
+        height: 90vh;
+    }
+    #slideshow h2 {
+        font-size: 28px;
+    }
+}
+
+.slideshow-waves {
+    display: block;
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.wave1 use {
+    -webkit-animation: move-forever1 10s linear infinite;
+    animation: move-forever1 10s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.wave2 use {
+    -webkit-animation: move-forever2 8s linear infinite;
+    animation: move-forever2 8s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+.wave3 use {
+    -webkit-animation: move-forever3 6s linear infinite;
+    animation: move-forever3 6s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+@-webkit-keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@-webkit-keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@-webkit-keyframes move-forever3 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever3 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+
+/*--------------------------------------------------------------
+# slideshow Section End
+--------------------------------------------------------------*/

@@ -22,7 +22,7 @@
                 <li><a class="nav-link scrollto" href="#team">Team</a></li>
                 <li><a class="nav-link scrollto " href="#gallery">Gallery</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                <li><a class="nav-link scrollto active" id="btnlog" href="#login">Log In</a></li>
+                <li><a class="nav-link scrollto active" id="btnlog" href="#login" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Log In</a></li>
                 <li><a class="nav-link scrollto active" id="btnreg" href="#register">Register</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>

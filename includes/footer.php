@@ -1,4 +1,1 @@
-
-
-</body>
-</html>
+<!-- footer goes here -->
