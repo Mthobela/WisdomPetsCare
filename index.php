@@ -21,7 +21,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- javascript -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 
 </head>
 <body>
@@ -42,8 +42,7 @@
 
 
 <!-- end main -->
-<!-- javascript -->
-<script src="assets/js/main.js"></script>
+
 
 
 <!-- start includes page footer -->
