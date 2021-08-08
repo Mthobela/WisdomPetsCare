@@ -9,27 +9,35 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto active" href="#Home">Home</a></li>
+                <li><a class="nav-link scrollto active" href="#header">Home</a></li>
                 <li><a class="nav-link scrollto" href="#about">About Us</a></li>
                 <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#selling">Selling Pets</a></li>
-                        <li><a href="#accommodation">Pets Accommodation</a></li>
-                        <li><a href="#medical">Pets Medical Cares</a></li>
+                        <li><a href="#services">Afford Pets</a></li>
+                        <li><a href="#services">Accommodate Your Pets</a></li>
+                        <li><a href="#services">Educate Your Pets</a></li>
 
                     </ul>
                 </li>
                 <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                <li><a class="nav-link scrollto " href="#gallery">Gallery</a></li>
                 <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                <li><a class="nav-link scrollto active" id="btnlog" href="#login" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Log In</a></li>
-                <li><a class="nav-link scrollto active" id="btnreg" href="#register">Register</a></li>
+
+                <!-- Check if session username exists -->
+                <?php if (isset($_SESSION['email'])) : ?>
+
+                    <li><a class="nav-link scrollto active " href="logout.php?logout=true" id="logout">Logout</a></li> &nbsp;&nbsp;
+                    <li id="usernamedisplay"><?php echo 'Hi, ' . ucwords($_SESSION['email'])  ?></li>
+                <?php endif;?>
+                <!-- Check if session username not exists -->
+                <?php if (!isset($_SESSION['email'])) : ?>
+                    <li><a class='nav-link scrollto btn btn-dark btn-sm' id='btnlog' href='login.php'  >Login</a></li>
+                    <li><a class='nav-link scrollto btn btn-dark btn-sm' id='btnreg' href='register.php' >Register</a></li>
+
+                <?php endif ?>
+
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
 
     </div>
 </header>
-
-
-
