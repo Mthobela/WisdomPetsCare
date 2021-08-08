@@ -1,3 +1,9 @@
+<?php
+ require_once ('includes/db_connection.php');
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +11,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Wisdom Pets</title>
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -23,16 +29,29 @@
     <!-- javascript -->
     <script src="assets/js/main.js" defer></script>
 
+    <!-- Font Awesome CSS -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+
+
+
 </head>
 <body>
+<!-- Start preloader -->
+<!-- <div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div> -->
+<!-- End preloader -->
+
 
 <!-- start includes page header -->
 <?php include 'includes/header.php'?>
 <!-- end includes page header -->
 
-<!-- start login modal -->
-<?php include 'includes/loginForm.php' ?>
-<!-- end login modal -->
+
 
 <!-- slide show start -->
 <?php include 'includes/slideshow.php'?>
@@ -40,14 +59,27 @@
 
 <!--  start main -->
 
-
 <!-- end main -->
-
-
 
 <!-- start includes page footer -->
 <?php include_once 'includes/footer.php' ?>
 <!-- end includes page footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Start Cookie Section -->
+<div class="cookie-container">
+    <p>
+        We use cookies in this website to give you the best experience on our
+        site and show you relevant ads. To find out more, read our
+        <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+    </p>
+
+    <button class="cookie-btn">
+        Okay
+    </button>
+</div>
+<!-- End Cookie Section -->
+
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/aos/aos.js"></script>
