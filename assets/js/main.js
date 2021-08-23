@@ -4,7 +4,15 @@
     /**
      * Preloader
      */
-  
+    $(document).ready(function() {
+
+        setTimeout(function(){
+            $('body').addClass('loaded');
+
+        }, 6000);
+
+    });
+
 
 
     /**
@@ -325,3 +333,14 @@ setTimeout(() => {
         cookieContainer.classList.add("active");
     }
 }, 2000);
+
+
+function autoReader(){
+    var speak = new SpeechSynthesisUtterance();
+    speak.text = "Hi, Im Bello. I am a cool dog, I love to be your friend., I like to keep your house safe." ;
+    var voices = window.speechSynthesis.getVoices();
+    speak.voice = voices[15];
+    window.speechSynthesis.speak(speak);
+}
+
+

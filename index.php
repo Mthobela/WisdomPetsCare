@@ -29,6 +29,8 @@
     <!-- javascript -->
     <script src="assets/js/main.js" defer></script>
 
+
+
     <!-- Font Awesome CSS -->
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
 
@@ -37,13 +39,13 @@
 </head>
 <body>
 <!-- Start preloader -->
-<!-- <div id="loader-wrapper">
+<div id="loader-wrapper">
     <div id="loader"></div>
 
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
 
-</div> -->
+</div>
 <!-- End preloader -->
 
 
@@ -58,7 +60,31 @@
 <!-- slide show end -->
 
 <!--  start main -->
+<main id="main">
+    <!-- start includes page about us -->
+    <?php include 'includes/about.php'?>
+    <!-- end includes page about -->
 
+    <!-- start image section -->
+    <?php include 'includes/imageSec.php' ?>
+    <!-- end image section -->
+
+    <!-- start services section -->
+    <?php include 'includes/services.php'?>
+    <!-- end services section -->
+
+    <!-- Start testimonials section -->
+    <?php include 'includes/testimonials.php'?>
+    <!-- end testimonials section -->
+
+    <!-- Start Team section -->
+    <?php include 'includes/Team.php'?>
+    <!-- end Team section -->
+
+    <!-- start contact section -->
+    <?php include 'includes/contact.php'?>
+    <!-- end contact section -->
+</main>
 <!-- end main -->
 
 <!-- start includes page footer -->

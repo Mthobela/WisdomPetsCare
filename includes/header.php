@@ -2,7 +2,8 @@
     <div class="container d-flex align-items-center justify-content-between">
 
         <div class="logo">
-            <h1><a href="index.php">Wisdom Pets</a></h1>
+            <h1><a href="index.php"><i class="fa fa-paw" aria-hidden="true"></i>
+                    Wisdom Pets</a></h1>
             <!-- For image logo-->
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>-->
         </div>
@@ -41,3 +42,6 @@
 
     </div>
 </header>
+
+
+

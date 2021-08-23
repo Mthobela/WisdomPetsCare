@@ -90,7 +90,7 @@ if (isset($_POST['login'])) {
         // encrypting password
         $password = md5($password);
         // selecting all the existing user from the database to check for existing user
-        $statement= "SELECT * FROM tbl_User WHERE email='$email'OR name='$username' AND password='$password'";
+        $statement= "SELECT * FROM tbl_User WHERE email='$email' AND password='$password'";
         // running our sql command or running query in the database
         $output = mysqli_query($conn, $statement);
 
@@ -106,3 +106,68 @@ if (isset($_POST['login'])) {
         }
     }
 }
+
+// forgot password
+
+if(isset($_POST['forgotPassword'])){
+    $email = $_POST['email'];
+
+    // validate email
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $errors['email'] = "Email Address is invalid";
+    }
+    if(empty($email)){
+        $errors['email'] = "Email Address Required";
+    }
+
+    if(count($errors) == 0) {
+        $statement = "SELECT * FROM tbl_User WHERE  Email='$email' LIMIT 1";
+        $query = mysqli_query($conn, $statement);
+        $user = mysqli_fetch_assoc($query);
+
+        $token = $user['token'];
+        sendResetPassword($email, $token);
+
+        header('location: password_message.php');
+        exit(0);
+    }
+}
+
+
+if(isset($_POST['reset'])){
+    $password = $_POST['password'];
+    $passwordConfirmation = $_POST['password_confirmation'];
+
+    if(empty($password) || empty([$passwordConfirmation])){
+        $errors['password'] = "Password is required";
+    }
+
+    if($password !== $passwordConfirmation){
+        $errors['password'] = "Password do not match";
+    }
+    $password = password_hash($password, PASSWORD_DEFAULT);
+    $email = $_SESSION['email'];
+
+    if(count($errors) == 0){
+        $statement = "UPDATE tbl_Users SET password='$password' WHERE email='$email'";
+        $output = mysqli_query($conn, $statement);
+
+        if($output){
+            header('location:login.php');
+            exit(0);
+        }
+    }
+}
+
+
+
+
+?>
+
+
+
+
+
+
+

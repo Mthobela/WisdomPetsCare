@@ -1276,3 +1276,42 @@ section {
 /*--------------------------------------------------------------
 # End Cookies
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Start Categories Bouncing Text
+--------------------------------------------------------------*/
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+.bounce {
+    animation-name: bounce;
+}
+
+@keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+}
+.flash {
+    animation-name: flash;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+/*--------------------------------------------------------------
+# End Categories Bouncing Text
+--------------------------------------------------------------*/
+
+
+
